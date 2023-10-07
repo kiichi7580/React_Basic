@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '../Header';
 import { ThreadList } from '../ThreadList';
 import { Routes, Route } from 'react-router-dom';
-import New from './New';
+import { New } from './New';
 import { Notfound } from '../Notfound';
 import '../App.css'
 

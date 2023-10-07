@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import '../New.css'
 
 
-function New () {
+export const  New = () => {
   const [text, setText] = useState("")
 
   // const [addText, setAddText] = useState("")
@@ -21,6 +22,7 @@ function New () {
       if(!response.ok) {
           console.log('error!');
       } 
+      setText("");
       console.log('ok!');
       return response.json();
   }).then((data)  => {
@@ -29,7 +31,6 @@ function New () {
       console.log(error);
   });
     // setAddText(text)
-    setText("");
   }
 
 
@@ -38,8 +39,9 @@ function New () {
       <h2 className="h2_thread_create">スレッド新規作成</h2>
       <div className="form_box">
         <div>
-        <input type="text" value={text} id="thread_title" name="thread_title" onChange={(event) => setText(event.target.value)}/><br/>
-          <a href="http://localhost:3000/" className="back_Top">Topに戻る</a><button className="btn_create" onClick={onClickAddText}>作成</button>
+          <input type="text" value={text} id="thread_title" name="thread_title" onChange={(event) => setText(event.target.value)}/><br/>
+          <Link to="/" className="back_Top">Topに戻る</Link>
+          <button className="btn_create" onClick={onClickAddText}>作成</button>
         </div>
       </div>
       {/* <p>リアルタイム:{text}</p>
@@ -49,5 +51,3 @@ function New () {
   )
   
 }
-
-export default New;

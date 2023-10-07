@@ -9,7 +9,7 @@ return (
       </div> */}
       {thread.map(item => (
         <div key={item.id} className="TitleList">
-          <p className="title_item">Title: {item.title}</p>
+          <p className="title_item">タイトル: {item.title}</p>
         </div>
       ))}
 
