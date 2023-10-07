@@ -3,6 +3,7 @@ import { Header } from '../Header';
 import { ThreadList } from '../ThreadList';
 import { Routes, Route } from 'react-router-dom';
 import New from './New';
+import { Notfound } from '../Notfound';
 import '../App.css'
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <ThreadList /> } />
         <Route path="/thread/new" element={ <New /> } />
-        {/* <Route path="*" element={ <Notfound /> } /> */}
+        <Route path="*" element={ <Notfound /> } />
       </Routes>
       
     </div>
