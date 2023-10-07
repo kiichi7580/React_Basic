@@ -1,0 +1,38 @@
+.New {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+.h2_thread_create {
+  height: 50px;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.form_box {
+  display: flex;
+  justify-content: center;
+}
+.form_thread_create {
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+}
+#thread_title {
+  width: 400px;
+  height: 45px;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 70px;
+}
+.back_Top {
+  float: left;
+}
+.btn_create {
+  width: 80px;
+  background-color: rgb(21, 128, 92);
+  float: right;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
