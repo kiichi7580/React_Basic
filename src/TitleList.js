@@ -8,7 +8,7 @@ return (
         <p>Title: {addText}</p>
       </div> */}
       {thread.map(item => (
-        <div key={item.id} className="TitleList">
+        <div key={item.id} className="TitleList" >
           <p className="title_item">タイトル: {item.title}</p>
         </div>
       ))}
