@@ -1,0 +1,40 @@
+.Thread {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.MessagePosts {
+  width: 700px;
+  height: 800px;
+  float: left;
+}
+.AddMessagePosts {
+  width: 500px;
+  height: 500px;
+  float: right;
+  text-align: center;
+  margin-top: 200px;
+}
+/* .post_list_ul {
+  list-style-type: none
+} */
+.post_list_li {
+  width: 628px;
+  height: 100px;
+  line-height: 100px;
+}
+.post_form {
+  display: inline-block;
+  width: 335px;
+  height: 99px;
+}
+
+.btn_post {
+  width: 311px;
+  height: 72px;
+  color: aliceblue;
+  background-color: rgb(21, 128, 92);
+  border: none;
+  border-radius: 4px;
+  margin-top: 50px;
+}
